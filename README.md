@@ -1,6 +1,6 @@
 # Smaato iOS Coding Challenge
 Write an iOS application using Objective-C that should make an HTTP GET request to
-“http://private-d847e-demoresponse.apiary-mock.com/questions”.
+http://private-d847e-demoresponse.apiary-mock.com/questions.
 Once loaded, application should randomly select one object from the response and display its
 content which is either text or image. The application should also display the user information
 and the date it was created e.g. “23.02.2016” or “1 day ago”, “just now”..
