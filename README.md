@@ -24,7 +24,7 @@ architecture will have the highest value.
 A JSON array representing image or text information along with user name and country. The
 response is NOT case sensitive.
 ### Image Object Format
-```json
+```
 {
     "created": -449280, /* number of seconds passed since created */
     "type": "IMG",
@@ -33,7 +33,7 @@ response is NOT case sensitive.
 }
 ```
 ### Text Object Format
-```json
+```
 {
     "created": -280800, /* number of seconds passed since created */
     "type": "TEXT",
@@ -42,7 +42,7 @@ response is NOT case sensitive.
 }
 ```
 Please note that the JSON array might have invalid or incomplete object e.g.
-```json
+```
 {
 "created": 0
 }
