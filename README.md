@@ -13,8 +13,11 @@ can see what they have marked as favorite.
 
 ## Bonus Points
 1. Write a Framework/Library to separate the responsibilities and to make it reusable.
-2. Add features as you like, use your imagination, but coding standard and overall
+2. Usage of Unit Testing (actual obvious, still mentioning it here).
+3. Add features as you like, use your imagination, but coding standard and overall
 architecture will have the highest value.
+4. Demonstrate proper usage (e.g. small commits with comments) of version control if you hand in code via github or bitbucket.
+
 
 ## Deliverables
 1. XCode project/s with source code
