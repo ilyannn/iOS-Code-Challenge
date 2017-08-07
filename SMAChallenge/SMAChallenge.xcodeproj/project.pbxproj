@@ -10,6 +10,8 @@
 		BAC09E061F386E440019BED3 /* SMANetworkRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC09E051F386E440019BED3 /* SMANetworkRequestResult.m */; };
 		BAC09E071F386ED60019BED3 /* SMANetworkRequestResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAC09E041F386E440019BED3 /* SMANetworkRequestResult.h */; };
 		BAC09E0B1F386F890019BED3 /* NSArray+SMAFlatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC09E0A1F386F890019BED3 /* NSArray+SMAFlatMap.m */; };
+		BAC09E0D1F3870DB0019BED3 /* questionsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = BAC09E0C1F3870DB0019BED3 /* questionsTest.json */; };
+		BAC09E0F1F3873A10019BED3 /* SMANetwork.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAC09E0E1F38738D0019BED3 /* SMANetwork.h */; };
 		BAE8C6E11F383A69002CC5ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C6E01F383A69002CC5ED /* AppDelegate.m */; };
 		BAE8C6E41F383A69002CC5ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C6E31F383A69002CC5ED /* ViewController.m */; };
 		BAE8C6E71F383A69002CC5ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE8C6E51F383A69002CC5ED /* Main.storyboard */; };
@@ -73,6 +75,7 @@
 				BAE8C7401F3854C3002CC5ED /* SMANetworkManager.h in CopyFiles */,
 				BAE8C7411F3854C6002CC5ED /* SMANetworkRequest.h in CopyFiles */,
 				BAE8C7421F3854C8002CC5ED /* SMAQuestionsRequest.h in CopyFiles */,
+				BAC09E0F1F3873A10019BED3 /* SMANetwork.h in CopyFiles */,
 				BAC09E071F386ED60019BED3 /* SMANetworkRequestResult.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +87,8 @@
 		BAC09E051F386E440019BED3 /* SMANetworkRequestResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMANetworkRequestResult.m; sourceTree = "<group>"; };
 		BAC09E091F386F890019BED3 /* NSArray+SMAFlatMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SMAFlatMap.h"; sourceTree = "<group>"; };
 		BAC09E0A1F386F890019BED3 /* NSArray+SMAFlatMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SMAFlatMap.m"; sourceTree = "<group>"; };
+		BAC09E0C1F3870DB0019BED3 /* questionsTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questionsTest.json; sourceTree = "<group>"; };
+		BAC09E0E1F38738D0019BED3 /* SMANetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMANetwork.h; sourceTree = "<group>"; };
 		BAE8C6DC1F383A69002CC5ED /* SMAChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMAChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE8C6DF1F383A69002CC5ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BAE8C6E01F383A69002CC5ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -200,6 +205,7 @@
 			children = (
 				BAE8C6F81F383A6A002CC5ED /* SMAModelTests.m */,
 				BAE8C7431F3854FE002CC5ED /* SMANetworkTests.m */,
+				BAC09E0C1F3870DB0019BED3 /* questionsTest.json */,
 				BAE8C6FA1F383A6A002CC5ED /* Info.plist */,
 			);
 			path = SMAChallengeTests;
@@ -212,6 +218,7 @@
 				BAE8C7101F383C5B002CC5ED /* Model */,
 				BAE8C7361F385229002CC5ED /* Network */,
 				BAE8C72B1F3845DA002CC5ED /* SMAModel.h */,
+				BAC09E0E1F38738D0019BED3 /* SMANetwork.h */,
 			);
 			path = SMANetwork;
 			sourceTree = "<group>";
@@ -361,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC09E0D1F3870DB0019BED3 /* questionsTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

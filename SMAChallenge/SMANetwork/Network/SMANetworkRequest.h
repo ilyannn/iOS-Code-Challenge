@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, atomic) NSURL *requestURL;
 
 // Defers to processJSONData by default.
-- (SMANetworkRequestResult *)processResults:(NSData *)data error:(NSError *)error;
+- (SMANetworkRequestResult *)processResults:(nullable NSData *)data error:(nullable NSError *)error;
 
 // Define this in subclasses.
 - (void)buildRequestComponents:(NSURLComponents *)components;

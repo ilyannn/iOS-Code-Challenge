@@ -1,0 +1,17 @@
+[
+ { "created": -449280, "type": "IMG", "data": { "url": "https://pixabay.com/xxxx" }, "user" : { "name": "John", "country":"USA" } }
+,
+{ "created": -280800, "type": "TEXT", "data": { "text": "The real danger is not that computers will begin to think like men, but that men will begin to think like computers." }, "user": { "name": "Sydney Harris", "country":"USA" } }
+,
+ { "created": -280800, "tyspe": "TEXT", "dadsta": { "tedxt": "The real danger is not that computers will begin to think like men, but that men will begin to think like computers." }, "user": { "name": "Sydney Harris", "country":"USA" } }
+,
+ { "created": -280800, "tyspe": "TEXT", "dadsta": { "tedxt": "The real danger is not that computers will begin to think like men, but that men will begin to think like computers." }, "user": { "naasdfme": "Sydney Harris", "country":"USA" } }
+ ,
+ { "created": -280800, "type": "TEXT", "data": { "text": "The real danger is not that computers will begin to think like men, but that men will begin to think like computers." }, "user": { "name": 326754, "country":"USA" } }
+ ,
+ { "created": "today", "type": "TEXT", "data": { "text": "The real danger is not that computers will begin to think like men, but that men will begin to think like computers." }, "user": { "name": "326754", "country":"USA" } }
+ ,
+ { "created": -1234, "type": "STEXT", "data": { "text": "The real danger is not that computers will begin to think like men, but that men will begin to think like computers." }, "user": { "name": "326754", "country":"USA" } }
+ ,
+ { "created": 0 }
+]
