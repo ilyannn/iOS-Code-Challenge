@@ -28,8 +28,9 @@ NS_ASSUME_NONNULL_END
 	return self;
 }
 
-- (void)startRequest:(SMANetworkRequest *)request withResultBlock:(void(^)(SMANetworkRequestResult *))resultBlock {
-	[self.session dataTaskWithURL:request.requestURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+- (NSURLSessionDataTask *)taskForRequest:(SMANetworkRequest *)request withResultBlock:(void(^)(SMANetworkRequestResult *))resultBlock {
+	
+	return [self.session dataTaskWithURL:request.requestURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
 		SMANetworkRequestResult *result = [request processResults:data error:error];
 		dispatch_async(dispatch_get_main_queue(), ^{
 			resultBlock(result);
@@ -38,7 +39,7 @@ NS_ASSUME_NONNULL_END
 }
 
 - (void)retrieveQuestionsAndThen:(void (^)(SMANetworkRequestResult * _Nonnull))resultBlock {
-	[self startRequest:[SMAQuestionsRequest new] withResultBlock:resultBlock];
+	[[self taskForRequest:[SMAQuestionsRequest new] withResultBlock:resultBlock] resume];
 }
 		 
 		 

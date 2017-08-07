@@ -60,4 +60,19 @@
 	XCTAssert(questions.count > 0, @"This test assumes that endpoint works and blocks on it. There should be some questions correctly parsed.");
 }
 
+- (void)testAsyncronousURLRetrieval {
+	
+	XCTestExpectation *expectation = [self expectationWithDescription: @"This test assumes that endpoint works. It should retrieve and parse questions."];
+	
+	SMANetworkManager *manager = [SMANetworkManager new];
+	[manager retrieveQuestionsAndThen:^(SMANetworkRequestResult * _Nonnull results) {
+		NSArray *questions = results.result;
+		XCTAssert(questions.count > 0);
+		[expectation fulfill];
+		NSLog(@"Questions coming from the endpoint are: %@", questions);
+	}];
+	
+	[self waitForExpectationsWithTimeout:10.0 handler:nil];
+}
+
 @end

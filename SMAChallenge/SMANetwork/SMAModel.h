@@ -13,5 +13,6 @@
 #import <SMANetwork/SMAUser.h>
 #import <SMANetwork/SMAQuestion.h>
 #import <SMANetwork/SMATextQuestion.h>
+#import <SMANetwork/SMAImageQuestion.h>
 
 #endif /* SMAModel_h */
