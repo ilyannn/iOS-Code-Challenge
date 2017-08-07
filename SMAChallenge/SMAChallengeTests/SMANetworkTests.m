@@ -40,5 +40,12 @@
 	XCTAssertEqualObjects(imageQuestion.user.name, @"John", @"The name should be parsed.");
 }
 
+- (void)testSyncronousURLRetrieval {
+	
+	NSData *data = [NSData dataWithContentsOfURL:self.request.requestURL];
+	SMANetworkRequestResult *results = [self.request processResults:data error:nil];
+	NSArray *questions = results.result;
+	XCTAssert(questions.count > 0, @"This test assumes that endpoint works and blocks on it. There should be some questions correctly parsed.");
+}
 
 @end
