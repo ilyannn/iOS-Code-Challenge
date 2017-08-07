@@ -7,16 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <SMANetwork/SMANetworkRequestResult.h>
 NS_ASSUME_NONNULL_BEGIN
 
-/// A generic request. Abstract class.
+/// A generic request that knows where to go and how to process the result. Abstract class.
 @interface SMANetworkRequest : NSObject
 
 @property (readonly, atomic) NSURL *requestURL;
 
+// Defers to processJSONData by default.
+- (SMANetworkRequestResult *)processResults:(NSData *)data error:(NSError *)error;
+
 // Define this in subclasses.
 - (void)buildRequestComponents:(NSURLComponents *)components;
+- (NSArray *)processJSONData:(NSArray *)array;
 
 @end
 

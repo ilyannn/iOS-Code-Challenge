@@ -6,7 +6,7 @@
 //  Copyright © 2017 Ilya Nikokoshev. All rights reserved.
 //
 
-#import "SMANetworkRequest.h"
+#import <SMANetwork/SMANetworkRequest.h>
 
 @interface SMAQuestionsRequest : SMANetworkRequest
 

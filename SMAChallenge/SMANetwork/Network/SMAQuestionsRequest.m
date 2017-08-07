@@ -6,6 +6,8 @@
 //  Copyright © 2017 Ilya Nikokoshev. All rights reserved.
 //
 
+#import "NSArray+SMAFlatMap.h"
+#import "SMAQuestion.h"
 #import "SMAQuestionsRequest.h"
 
 @implementation SMAQuestionsRequest
@@ -15,6 +17,15 @@
 	components.scheme = @"http";
 	components.host = @"private-d847e-demoresponse.apiary-mock.com";
 	components.path = @"/questions";
+}
+
+- (NSArray *)processJSONData:(NSArray *)array {
+	return [array sma_flatMap:^id _Nullable(NSDictionary * _Nonnull maybe_dict) {
+		if (![maybe_dict isKindOfClass:[NSDictionary class]]) {
+			return nil;
+		}
+		return [SMAQuestion createFromAPIDictionary:maybe_dict];
+	}];
 }
 
 @end

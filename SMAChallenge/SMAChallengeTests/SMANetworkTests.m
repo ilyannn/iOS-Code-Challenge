@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import <SMANetwork/SMAQuestionsRequest.h>
+#import <SMANetwork/SMANetworkManager.h>
 
 @interface SMANetworkTests : XCTestCase
 @property (nonatomic) SMAQuestionsRequest *request;
