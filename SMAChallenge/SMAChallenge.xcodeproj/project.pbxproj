@@ -82,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA7EA0F11F38823C00FC440C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BAC09E041F386E440019BED3 /* SMANetworkRequestResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMANetworkRequestResult.h; sourceTree = "<group>"; };
 		BAC09E051F386E440019BED3 /* SMANetworkRequestResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMANetworkRequestResult.m; sourceTree = "<group>"; };
 		BAC09E091F386F890019BED3 /* NSArray+SMAFlatMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SMAFlatMap.h"; sourceTree = "<group>"; };
@@ -217,6 +218,7 @@
 				BAE8C7361F385229002CC5ED /* Network */,
 				BAE8C72B1F3845DA002CC5ED /* SMAModel.h */,
 				BAC09E0E1F38738D0019BED3 /* SMANetwork.h */,
+				BA7EA0F11F38823C00FC440C /* README.md */,
 			);
 			path = SMANetwork;
 			sourceTree = "<group>";
@@ -492,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -541,7 +543,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
