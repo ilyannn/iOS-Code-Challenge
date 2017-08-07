@@ -21,6 +21,7 @@
 		BAE8C71C1F383CF1002CC5ED /* SMAQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C71B1F383CF1002CC5ED /* SMAQuestion.m */; };
 		BAE8C71F1F383D01002CC5ED /* SMATextQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C71E1F383D01002CC5ED /* SMATextQuestion.m */; };
 		BAE8C7221F383D0C002CC5ED /* SMAImageQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C7211F383D0C002CC5ED /* SMAImageQuestion.m */; };
+		BAE8C72A1F384201002CC5ED /* NSDictionary+SMASafelyExtract.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C7291F384201002CC5ED /* NSDictionary+SMASafelyExtract.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,10 @@
 		BAE8C71E1F383D01002CC5ED /* SMATextQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMATextQuestion.m; sourceTree = "<group>"; };
 		BAE8C7201F383D0C002CC5ED /* SMAImageQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAImageQuestion.h; sourceTree = "<group>"; };
 		BAE8C7211F383D0C002CC5ED /* SMAImageQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAImageQuestion.m; sourceTree = "<group>"; };
+		BAE8C7271F384146002CC5ED /* SMANetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMANetworkHelper.h; sourceTree = "<group>"; };
+		BAE8C7281F384201002CC5ED /* NSDictionary+SMASafelyExtract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SMASafelyExtract.h"; sourceTree = "<group>"; };
+		BAE8C7291F384201002CC5ED /* NSDictionary+SMASafelyExtract.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SMASafelyExtract.m"; sourceTree = "<group>"; };
+		BAE8C72B1F3845DA002CC5ED /* SMAModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +163,7 @@
 				BAE8C7101F383C5B002CC5ED /* Model */,
 				BAE8C7091F383C2E002CC5ED /* SMANetwork.h */,
 				BAE8C70A1F383C2E002CC5ED /* SMANetwork.m */,
+				BAE8C72B1F3845DA002CC5ED /* SMAModel.h */,
 			);
 			path = SMANetwork;
 			sourceTree = "<group>";
@@ -175,6 +181,9 @@
 				BAE8C71E1F383D01002CC5ED /* SMATextQuestion.m */,
 				BAE8C7201F383D0C002CC5ED /* SMAImageQuestion.h */,
 				BAE8C7211F383D0C002CC5ED /* SMAImageQuestion.m */,
+				BAE8C7271F384146002CC5ED /* SMANetworkHelper.h */,
+				BAE8C7281F384201002CC5ED /* NSDictionary+SMASafelyExtract.h */,
+				BAE8C7291F384201002CC5ED /* NSDictionary+SMASafelyExtract.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,6 +331,7 @@
 				BAE8C71F1F383D01002CC5ED /* SMATextQuestion.m in Sources */,
 				BAE8C7161F383CA2002CC5ED /* SMAUser.m in Sources */,
 				BAE8C71C1F383CF1002CC5ED /* SMAQuestion.m in Sources */,
+				BAE8C72A1F384201002CC5ED /* NSDictionary+SMASafelyExtract.m in Sources */,
 				BAE8C7221F383D0C002CC5ED /* SMAImageQuestion.m in Sources */,
 				BAE8C7131F383C90002CC5ED /* SMAObject.m in Sources */,
 				BAE8C70B1F383C2E002CC5ED /* SMANetwork.m in Sources */,

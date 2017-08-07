@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <SMANetwork/SMANetwork.h>
 
 @interface SMAChallengeTests : XCTestCase
 

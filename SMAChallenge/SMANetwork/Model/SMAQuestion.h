@@ -14,8 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Question object, can hold text or image.
 @interface SMAQuestion : SMAObject
+
+/// Returns an instance of SMATextQuestion or SMAImageQuestion (or nil).
++ (nullable instancetype)createFromAPIDictionary:(NSDictionary *)dict;
+
 @property (nonatomic, readonly) SMAUser *user;
 @property (nonatomic, readonly) NSDate *created;
+
 @end
 
 NS_ASSUME_NONNULL_END
