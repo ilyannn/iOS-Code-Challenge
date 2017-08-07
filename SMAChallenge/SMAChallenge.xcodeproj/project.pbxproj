@@ -7,13 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAC09E061F386E440019BED3 /* SMANetworkRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC09E051F386E440019BED3 /* SMANetworkRequestResult.m */; };
+		BAC09E071F386ED60019BED3 /* SMANetworkRequestResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAC09E041F386E440019BED3 /* SMANetworkRequestResult.h */; };
+		BAC09E0B1F386F890019BED3 /* NSArray+SMAFlatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC09E0A1F386F890019BED3 /* NSArray+SMAFlatMap.m */; };
+		BAC09E0D1F3870DB0019BED3 /* questionsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = BAC09E0C1F3870DB0019BED3 /* questionsTest.json */; };
+		BAC09E0F1F3873A10019BED3 /* SMANetwork.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAC09E0E1F38738D0019BED3 /* SMANetwork.h */; };
 		BAE8C6E11F383A69002CC5ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C6E01F383A69002CC5ED /* AppDelegate.m */; };
 		BAE8C6E41F383A69002CC5ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C6E31F383A69002CC5ED /* ViewController.m */; };
 		BAE8C6E71F383A69002CC5ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE8C6E51F383A69002CC5ED /* Main.storyboard */; };
 		BAE8C6E91F383A69002CC5ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE8C6E81F383A69002CC5ED /* Assets.xcassets */; };
 		BAE8C6EC1F383A69002CC5ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE8C6EA1F383A69002CC5ED /* LaunchScreen.storyboard */; };
 		BAE8C6EF1F383A69002CC5ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C6EE1F383A69002CC5ED /* main.m */; };
-		BAE8C6F91F383A6A002CC5ED /* SMAChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C6F81F383A6A002CC5ED /* SMAChallengeTests.m */; };
+		BAE8C6F91F383A6A002CC5ED /* SMAModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C6F81F383A6A002CC5ED /* SMAModelTests.m */; };
+		BAE8C7131F383C90002CC5ED /* SMAObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C7121F383C90002CC5ED /* SMAObject.m */; };
+		BAE8C7161F383CA2002CC5ED /* SMAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C7151F383CA2002CC5ED /* SMAUser.m */; };
+		BAE8C71C1F383CF1002CC5ED /* SMAQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C71B1F383CF1002CC5ED /* SMAQuestion.m */; };
+		BAE8C71F1F383D01002CC5ED /* SMATextQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C71E1F383D01002CC5ED /* SMATextQuestion.m */; };
+		BAE8C7221F383D0C002CC5ED /* SMAImageQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C7211F383D0C002CC5ED /* SMAImageQuestion.m */; };
+		BAE8C72A1F384201002CC5ED /* NSDictionary+SMASafelyExtract.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C7291F384201002CC5ED /* NSDictionary+SMASafelyExtract.m */; };
+		BAE8C72D1F38493B002CC5ED /* libSMANetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE8C7071F383C2D002CC5ED /* libSMANetwork.a */; };
+		BAE8C72E1F3849A7002CC5ED /* SMAModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C72B1F3845DA002CC5ED /* SMAModel.h */; };
+		BAE8C72F1F3849A9002CC5ED /* SMAObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C7111F383C90002CC5ED /* SMAObject.h */; };
+		BAE8C7301F3849AC002CC5ED /* SMAUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C7141F383CA2002CC5ED /* SMAUser.h */; };
+		BAE8C7311F3849AF002CC5ED /* SMAQuestion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C71A1F383CF1002CC5ED /* SMAQuestion.h */; };
+		BAE8C7321F3849B2002CC5ED /* SMATextQuestion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C71D1F383D01002CC5ED /* SMATextQuestion.h */; };
+		BAE8C7331F3849B4002CC5ED /* SMAImageQuestion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C7201F383D0C002CC5ED /* SMAImageQuestion.h */; };
+		BAE8C7391F3852B6002CC5ED /* SMANetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C7381F3852B6002CC5ED /* SMANetworkManager.m */; };
+		BAE8C73C1F3852CF002CC5ED /* SMANetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C73B1F3852CF002CC5ED /* SMANetworkRequest.m */; };
+		BAE8C73F1F3852EA002CC5ED /* SMAQuestionsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C73E1F3852EA002CC5ED /* SMAQuestionsRequest.m */; };
+		BAE8C7401F3854C3002CC5ED /* SMANetworkManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C7371F3852B6002CC5ED /* SMANetworkManager.h */; };
+		BAE8C7411F3854C6002CC5ED /* SMANetworkRequest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C73A1F3852CF002CC5ED /* SMANetworkRequest.h */; };
+		BAE8C7421F3854C8002CC5ED /* SMAQuestionsRequest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C73D1F3852EA002CC5ED /* SMAQuestionsRequest.h */; };
+		BAE8C7441F3854FE002CC5ED /* SMANetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C7431F3854FE002CC5ED /* SMANetworkTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +49,45 @@
 			remoteGlobalIDString = BAE8C6DB1F383A69002CC5ED;
 			remoteInfo = SMAChallenge;
 		};
+		BAE8C7251F384057002CC5ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAE8C6D41F383A69002CC5ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAE8C7061F383C2D002CC5ED;
+			remoteInfo = SMANetwork;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BAE8C7051F383C2D002CC5ED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				BAE8C7301F3849AC002CC5ED /* SMAUser.h in CopyFiles */,
+				BAE8C72E1F3849A7002CC5ED /* SMAModel.h in CopyFiles */,
+				BAE8C7311F3849AF002CC5ED /* SMAQuestion.h in CopyFiles */,
+				BAE8C7321F3849B2002CC5ED /* SMATextQuestion.h in CopyFiles */,
+				BAE8C7331F3849B4002CC5ED /* SMAImageQuestion.h in CopyFiles */,
+				BAE8C72F1F3849A9002CC5ED /* SMAObject.h in CopyFiles */,
+				BAE8C7401F3854C3002CC5ED /* SMANetworkManager.h in CopyFiles */,
+				BAE8C7411F3854C6002CC5ED /* SMANetworkRequest.h in CopyFiles */,
+				BAE8C7421F3854C8002CC5ED /* SMAQuestionsRequest.h in CopyFiles */,
+				BAC09E0F1F3873A10019BED3 /* SMANetwork.h in CopyFiles */,
+				BAC09E071F386ED60019BED3 /* SMANetworkRequestResult.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BAC09E041F386E440019BED3 /* SMANetworkRequestResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMANetworkRequestResult.h; sourceTree = "<group>"; };
+		BAC09E051F386E440019BED3 /* SMANetworkRequestResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMANetworkRequestResult.m; sourceTree = "<group>"; };
+		BAC09E091F386F890019BED3 /* NSArray+SMAFlatMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SMAFlatMap.h"; sourceTree = "<group>"; };
+		BAC09E0A1F386F890019BED3 /* NSArray+SMAFlatMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SMAFlatMap.m"; sourceTree = "<group>"; };
+		BAC09E0C1F3870DB0019BED3 /* questionsTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questionsTest.json; sourceTree = "<group>"; };
+		BAC09E0E1F38738D0019BED3 /* SMANetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMANetwork.h; sourceTree = "<group>"; };
 		BAE8C6DC1F383A69002CC5ED /* SMAChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMAChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE8C6DF1F383A69002CC5ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BAE8C6E01F383A69002CC5ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -38,8 +99,30 @@
 		BAE8C6ED1F383A69002CC5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAE8C6EE1F383A69002CC5ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAE8C6F41F383A6A002CC5ED /* SMAChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMAChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAE8C6F81F383A6A002CC5ED /* SMAChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAChallengeTests.m; sourceTree = "<group>"; };
+		BAE8C6F81F383A6A002CC5ED /* SMAModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAModelTests.m; sourceTree = "<group>"; };
 		BAE8C6FA1F383A6A002CC5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE8C7071F383C2D002CC5ED /* libSMANetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMANetwork.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE8C7111F383C90002CC5ED /* SMAObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAObject.h; sourceTree = "<group>"; };
+		BAE8C7121F383C90002CC5ED /* SMAObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAObject.m; sourceTree = "<group>"; };
+		BAE8C7141F383CA2002CC5ED /* SMAUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAUser.h; sourceTree = "<group>"; };
+		BAE8C7151F383CA2002CC5ED /* SMAUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAUser.m; sourceTree = "<group>"; };
+		BAE8C71A1F383CF1002CC5ED /* SMAQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAQuestion.h; sourceTree = "<group>"; };
+		BAE8C71B1F383CF1002CC5ED /* SMAQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAQuestion.m; sourceTree = "<group>"; };
+		BAE8C71D1F383D01002CC5ED /* SMATextQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMATextQuestion.h; sourceTree = "<group>"; };
+		BAE8C71E1F383D01002CC5ED /* SMATextQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMATextQuestion.m; sourceTree = "<group>"; };
+		BAE8C7201F383D0C002CC5ED /* SMAImageQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAImageQuestion.h; sourceTree = "<group>"; };
+		BAE8C7211F383D0C002CC5ED /* SMAImageQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAImageQuestion.m; sourceTree = "<group>"; };
+		BAE8C7271F384146002CC5ED /* SMANetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMANetworkHelper.h; sourceTree = "<group>"; };
+		BAE8C7281F384201002CC5ED /* NSDictionary+SMASafelyExtract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SMASafelyExtract.h"; sourceTree = "<group>"; };
+		BAE8C7291F384201002CC5ED /* NSDictionary+SMASafelyExtract.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SMASafelyExtract.m"; sourceTree = "<group>"; };
+		BAE8C72B1F3845DA002CC5ED /* SMAModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAModel.h; sourceTree = "<group>"; };
+		BAE8C7371F3852B6002CC5ED /* SMANetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMANetworkManager.h; sourceTree = "<group>"; };
+		BAE8C7381F3852B6002CC5ED /* SMANetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMANetworkManager.m; sourceTree = "<group>"; };
+		BAE8C73A1F3852CF002CC5ED /* SMANetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMANetworkRequest.h; sourceTree = "<group>"; };
+		BAE8C73B1F3852CF002CC5ED /* SMANetworkRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMANetworkRequest.m; sourceTree = "<group>"; };
+		BAE8C73D1F3852EA002CC5ED /* SMAQuestionsRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAQuestionsRequest.h; sourceTree = "<group>"; };
+		BAE8C73E1F3852EA002CC5ED /* SMAQuestionsRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAQuestionsRequest.m; sourceTree = "<group>"; };
+		BAE8C7431F3854FE002CC5ED /* SMANetworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMANetworkTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE8C72D1F38493B002CC5ED /* libSMANetwork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,14 +141,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAE8C7041F383C2D002CC5ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BAC09E081F386F570019BED3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BAE8C7281F384201002CC5ED /* NSDictionary+SMASafelyExtract.h */,
+				BAE8C7291F384201002CC5ED /* NSDictionary+SMASafelyExtract.m */,
+				BAC09E091F386F890019BED3 /* NSArray+SMAFlatMap.h */,
+				BAC09E0A1F386F890019BED3 /* NSArray+SMAFlatMap.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		BAE8C6D31F383A69002CC5ED = {
 			isa = PBXGroup;
 			children = (
 				BAE8C6DE1F383A69002CC5ED /* SMAChallenge */,
 				BAE8C6F71F383A6A002CC5ED /* SMAChallengeTests */,
+				BAE8C7081F383C2E002CC5ED /* SMANetwork */,
 				BAE8C6DD1F383A69002CC5ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +177,7 @@
 			children = (
 				BAE8C6DC1F383A69002CC5ED /* SMAChallenge.app */,
 				BAE8C6F41F383A6A002CC5ED /* SMAChallengeTests.xctest */,
+				BAE8C7071F383C2D002CC5ED /* libSMANetwork.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,10 +201,57 @@
 		BAE8C6F71F383A6A002CC5ED /* SMAChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				BAE8C6F81F383A6A002CC5ED /* SMAChallengeTests.m */,
+				BAE8C6F81F383A6A002CC5ED /* SMAModelTests.m */,
+				BAE8C7431F3854FE002CC5ED /* SMANetworkTests.m */,
+				BAC09E0C1F3870DB0019BED3 /* questionsTest.json */,
 				BAE8C6FA1F383A6A002CC5ED /* Info.plist */,
 			);
 			path = SMAChallengeTests;
+			sourceTree = "<group>";
+		};
+		BAE8C7081F383C2E002CC5ED /* SMANetwork */ = {
+			isa = PBXGroup;
+			children = (
+				BAC09E081F386F570019BED3 /* Categories */,
+				BAE8C7101F383C5B002CC5ED /* Model */,
+				BAE8C7361F385229002CC5ED /* Network */,
+				BAE8C72B1F3845DA002CC5ED /* SMAModel.h */,
+				BAC09E0E1F38738D0019BED3 /* SMANetwork.h */,
+			);
+			path = SMANetwork;
+			sourceTree = "<group>";
+		};
+		BAE8C7101F383C5B002CC5ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAE8C7111F383C90002CC5ED /* SMAObject.h */,
+				BAE8C7121F383C90002CC5ED /* SMAObject.m */,
+				BAE8C7141F383CA2002CC5ED /* SMAUser.h */,
+				BAE8C7151F383CA2002CC5ED /* SMAUser.m */,
+				BAE8C71A1F383CF1002CC5ED /* SMAQuestion.h */,
+				BAE8C71B1F383CF1002CC5ED /* SMAQuestion.m */,
+				BAE8C71D1F383D01002CC5ED /* SMATextQuestion.h */,
+				BAE8C71E1F383D01002CC5ED /* SMATextQuestion.m */,
+				BAE8C7201F383D0C002CC5ED /* SMAImageQuestion.h */,
+				BAE8C7211F383D0C002CC5ED /* SMAImageQuestion.m */,
+				BAE8C7271F384146002CC5ED /* SMANetworkHelper.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAE8C7361F385229002CC5ED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BAE8C7371F3852B6002CC5ED /* SMANetworkManager.h */,
+				BAE8C7381F3852B6002CC5ED /* SMANetworkManager.m */,
+				BAE8C73A1F3852CF002CC5ED /* SMANetworkRequest.h */,
+				BAE8C73B1F3852CF002CC5ED /* SMANetworkRequest.m */,
+				BAE8C73D1F3852EA002CC5ED /* SMAQuestionsRequest.h */,
+				BAE8C73E1F3852EA002CC5ED /* SMAQuestionsRequest.m */,
+				BAC09E041F386E440019BED3 /* SMANetworkRequestResult.h */,
+				BAC09E051F386E440019BED3 /* SMANetworkRequestResult.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +268,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BAE8C7261F384057002CC5ED /* PBXTargetDependency */,
 			);
 			name = SMAChallenge;
 			productName = SMAChallenge;
@@ -141,6 +293,23 @@
 			productReference = BAE8C6F41F383A6A002CC5ED /* SMAChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BAE8C7061F383C2D002CC5ED /* SMANetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE8C70F1F383C2E002CC5ED /* Build configuration list for PBXNativeTarget "SMANetwork" */;
+			buildPhases = (
+				BAE8C7031F383C2D002CC5ED /* Sources */,
+				BAE8C7041F383C2D002CC5ED /* Frameworks */,
+				BAE8C7051F383C2D002CC5ED /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMANetwork;
+			productName = SMANetwork;
+			productReference = BAE8C7071F383C2D002CC5ED /* libSMANetwork.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,6 +325,9 @@
 					BAE8C6F31F383A6A002CC5ED = {
 						CreatedOnToolsVersion = 9.0;
 						TestTargetID = BAE8C6DB1F383A69002CC5ED;
+					};
+					BAE8C7061F383C2D002CC5ED = {
+						CreatedOnToolsVersion = 9.0;
 					};
 				};
 			};
@@ -174,6 +346,7 @@
 			targets = (
 				BAE8C6DB1F383A69002CC5ED /* SMAChallenge */,
 				BAE8C6F31F383A6A002CC5ED /* SMAChallengeTests */,
+				BAE8C7061F383C2D002CC5ED /* SMANetwork */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC09E0D1F3870DB0019BED3 /* questionsTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +387,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAE8C6F91F383A6A002CC5ED /* SMAChallengeTests.m in Sources */,
+				BAE8C7441F3854FE002CC5ED /* SMANetworkTests.m in Sources */,
+				BAE8C6F91F383A6A002CC5ED /* SMAModelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE8C7031F383C2D002CC5ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE8C71F1F383D01002CC5ED /* SMATextQuestion.m in Sources */,
+				BAE8C7161F383CA2002CC5ED /* SMAUser.m in Sources */,
+				BAC09E0B1F386F890019BED3 /* NSArray+SMAFlatMap.m in Sources */,
+				BAE8C71C1F383CF1002CC5ED /* SMAQuestion.m in Sources */,
+				BAE8C73C1F3852CF002CC5ED /* SMANetworkRequest.m in Sources */,
+				BAE8C72A1F384201002CC5ED /* NSDictionary+SMASafelyExtract.m in Sources */,
+				BAE8C73F1F3852EA002CC5ED /* SMAQuestionsRequest.m in Sources */,
+				BAE8C7391F3852B6002CC5ED /* SMANetworkManager.m in Sources */,
+				BAC09E061F386E440019BED3 /* SMANetworkRequestResult.m in Sources */,
+				BAE8C7221F383D0C002CC5ED /* SMAImageQuestion.m in Sources */,
+				BAE8C7131F383C90002CC5ED /* SMAObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +417,11 @@
 			isa = PBXTargetDependency;
 			target = BAE8C6DB1F383A69002CC5ED /* SMAChallenge */;
 			targetProxy = BAE8C6F51F383A6A002CC5ED /* PBXContainerItemProxy */;
+		};
+		BAE8C7261F384057002CC5ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAE8C7061F383C2D002CC5ED /* SMANetwork */;
+			targetProxy = BAE8C7251F384057002CC5ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -297,6 +495,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -344,6 +543,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -356,7 +556,7 @@
 				DEVELOPMENT_TEAM = QM2R683QZ8;
 				INFOPLIST_FILE = SMAChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.example..SMAChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.example.SMAChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -369,7 +569,7 @@
 				DEVELOPMENT_TEAM = QM2R683QZ8;
 				INFOPLIST_FILE = SMAChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.example..SMAChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.example.SMAChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,6 +603,28 @@
 			};
 			name = Release;
 		};
+		BAE8C70D1F383C2E002CC5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QM2R683QZ8;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAE8C70E1F383C2E002CC5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QM2R683QZ8;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -429,6 +651,15 @@
 			buildConfigurations = (
 				BAE8C7011F383A6A002CC5ED /* Debug */,
 				BAE8C7021F383A6A002CC5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE8C70F1F383C2E002CC5ED /* Build configuration list for PBXNativeTarget "SMANetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE8C70D1F383C2E002CC5ED /* Debug */,
+				BAE8C70E1F383C2E002CC5ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
