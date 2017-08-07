@@ -32,7 +32,6 @@
 		BAE8C7311F3849AF002CC5ED /* SMAQuestion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C71A1F383CF1002CC5ED /* SMAQuestion.h */; };
 		BAE8C7321F3849B2002CC5ED /* SMATextQuestion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C71D1F383D01002CC5ED /* SMATextQuestion.h */; };
 		BAE8C7331F3849B4002CC5ED /* SMAImageQuestion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C7201F383D0C002CC5ED /* SMAImageQuestion.h */; };
-		BAE8C7341F384AEF002CC5ED /* libSMANetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE8C7071F383C2D002CC5ED /* libSMANetwork.a */; };
 		BAE8C7391F3852B6002CC5ED /* SMANetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C7381F3852B6002CC5ED /* SMANetworkManager.m */; };
 		BAE8C73C1F3852CF002CC5ED /* SMANetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C73B1F3852CF002CC5ED /* SMANetworkRequest.m */; };
 		BAE8C73F1F3852EA002CC5ED /* SMAQuestionsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C73E1F3852EA002CC5ED /* SMAQuestionsRequest.m */; };
@@ -139,7 +138,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAE8C7341F384AEF002CC5ED /* libSMANetwork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

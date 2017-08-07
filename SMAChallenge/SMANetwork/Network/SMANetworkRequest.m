@@ -30,7 +30,7 @@
 		id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
 		
 		if (jsonError != nil) {
-			return [[SMANetworkRequestResult alloc] initWithError:jsonError];
+			return [[SMANetworkRequestResult alloc] initWithSerializationErrorUnderlyingError:jsonError];
 		}
 		
 		if ([json isKindOfClass:[NSArray class]]) {
@@ -38,7 +38,7 @@
 		}
 	}
 	
-	return [[SMANetworkRequestResult alloc] initWithSerializationError];
+	return [[SMANetworkRequestResult alloc] initWithSerializationErrorUnderlyingError:error];
 }
 
 - (void)buildRequestComponents:(NSURLComponents *)components {

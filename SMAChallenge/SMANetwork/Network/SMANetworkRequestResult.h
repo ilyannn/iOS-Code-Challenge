@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
 
-- (instancetype)initWithSerializationError;
+- (instancetype)initWithSerializationErrorUnderlyingError:(nullable NSError *)error;
 - (instancetype)initWithError:(NSError *)error NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithResult:(NSArray *)result NS_DESIGNATED_INITIALIZER;
 

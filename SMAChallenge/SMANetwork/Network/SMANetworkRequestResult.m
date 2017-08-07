@@ -26,8 +26,16 @@ NSString *SMANetworkRequestResultSerizalizationErrorDomain = @"SMANetworkRequest
 	return self;
 }
 
-- (instancetype)initWithSerializationError {
-	return [self initWithError:[NSError errorWithDomain:SMANetworkRequestResultSerizalizationErrorDomain code:1 userInfo:nil]];
+- (instancetype)initWithSerializationErrorUnderlyingError:(NSError *)error {
+	
+	NSString *techErrorString = @"Incorrect JSON given to parsing";
+	NSString *userErrorString = @"Incorrect data returned from the server";
+	NSMutableDictionary *errorDictionary = [@{NSLocalizedDescriptionKey: NSLocalizedString(userErrorString, @"User-visible serialization error description"),
+											 NSDebugDescriptionErrorKey: techErrorString
+											 } mutableCopy];
+	errorDictionary[NSUnderlyingErrorKey] = error;
+	
+	return [self initWithError:[NSError errorWithDomain:SMANetworkRequestResultSerizalizationErrorDomain code:1 userInfo:errorDictionary]];
 }
 
 - (NSString *)description {
