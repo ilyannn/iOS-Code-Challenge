@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SMATextQuestion : SMAQuestion
-@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy, readonly) NSString *text;
 @end
 
 NS_ASSUME_NONNULL_END
