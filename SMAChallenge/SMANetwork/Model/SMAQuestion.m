@@ -16,7 +16,7 @@
 
 + (instancetype)createFromAPIDictionary:(NSDictionary *)dict {
 	
-	NSString *type = [dict sma_safelyExtract:[NSString class] fromKeypath:@"type"];
+	NSString *type = [[dict sma_safelyExtract:[NSString class] fromKeypath:@"type"] uppercaseString];
 	
 	if ([type isEqualToString:@"TEXT"]) {
 		return [[SMATextQuestion alloc] initWithAPIDictionary:dict];
