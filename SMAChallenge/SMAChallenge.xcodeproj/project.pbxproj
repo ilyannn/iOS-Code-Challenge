@@ -14,6 +14,8 @@
 		BAE8C6EC1F383A69002CC5ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE8C6EA1F383A69002CC5ED /* LaunchScreen.storyboard */; };
 		BAE8C6EF1F383A69002CC5ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C6EE1F383A69002CC5ED /* main.m */; };
 		BAE8C6F91F383A6A002CC5ED /* SMAChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C6F81F383A6A002CC5ED /* SMAChallengeTests.m */; };
+		BAE8C70B1F383C2E002CC5ED /* SMANetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C70A1F383C2E002CC5ED /* SMANetwork.m */; };
+		BAE8C70C1F383C2E002CC5ED /* SMANetwork.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C7091F383C2E002CC5ED /* SMANetwork.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,19 @@
 			remoteInfo = SMAChallenge;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAE8C7051F383C2D002CC5ED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				BAE8C70C1F383C2E002CC5ED /* SMANetwork.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BAE8C6DC1F383A69002CC5ED /* SMAChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMAChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +55,9 @@
 		BAE8C6F41F383A6A002CC5ED /* SMAChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMAChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE8C6F81F383A6A002CC5ED /* SMAChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAChallengeTests.m; sourceTree = "<group>"; };
 		BAE8C6FA1F383A6A002CC5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE8C7071F383C2D002CC5ED /* libSMANetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMANetwork.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE8C7091F383C2E002CC5ED /* SMANetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMANetwork.h; sourceTree = "<group>"; };
+		BAE8C70A1F383C2E002CC5ED /* SMANetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMANetwork.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +75,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAE8C7041F383C2D002CC5ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +90,7 @@
 			children = (
 				BAE8C6DE1F383A69002CC5ED /* SMAChallenge */,
 				BAE8C6F71F383A6A002CC5ED /* SMAChallengeTests */,
+				BAE8C7081F383C2E002CC5ED /* SMANetwork */,
 				BAE8C6DD1F383A69002CC5ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +100,7 @@
 			children = (
 				BAE8C6DC1F383A69002CC5ED /* SMAChallenge.app */,
 				BAE8C6F41F383A6A002CC5ED /* SMAChallengeTests.xctest */,
+				BAE8C7071F383C2D002CC5ED /* libSMANetwork.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +128,15 @@
 				BAE8C6FA1F383A6A002CC5ED /* Info.plist */,
 			);
 			path = SMAChallengeTests;
+			sourceTree = "<group>";
+		};
+		BAE8C7081F383C2E002CC5ED /* SMANetwork */ = {
+			isa = PBXGroup;
+			children = (
+				BAE8C7091F383C2E002CC5ED /* SMANetwork.h */,
+				BAE8C70A1F383C2E002CC5ED /* SMANetwork.m */,
+			);
+			path = SMANetwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +177,23 @@
 			productReference = BAE8C6F41F383A6A002CC5ED /* SMAChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BAE8C7061F383C2D002CC5ED /* SMANetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE8C70F1F383C2E002CC5ED /* Build configuration list for PBXNativeTarget "SMANetwork" */;
+			buildPhases = (
+				BAE8C7031F383C2D002CC5ED /* Sources */,
+				BAE8C7041F383C2D002CC5ED /* Frameworks */,
+				BAE8C7051F383C2D002CC5ED /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMANetwork;
+			productName = SMANetwork;
+			productReference = BAE8C7071F383C2D002CC5ED /* libSMANetwork.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,6 +209,9 @@
 					BAE8C6F31F383A6A002CC5ED = {
 						CreatedOnToolsVersion = 9.0;
 						TestTargetID = BAE8C6DB1F383A69002CC5ED;
+					};
+					BAE8C7061F383C2D002CC5ED = {
+						CreatedOnToolsVersion = 9.0;
 					};
 				};
 			};
@@ -174,6 +230,7 @@
 			targets = (
 				BAE8C6DB1F383A69002CC5ED /* SMAChallenge */,
 				BAE8C6F31F383A6A002CC5ED /* SMAChallengeTests */,
+				BAE8C7061F383C2D002CC5ED /* SMANetwork */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +271,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAE8C6F91F383A6A002CC5ED /* SMAChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE8C7031F383C2D002CC5ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE8C70B1F383C2E002CC5ED /* SMANetwork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +421,7 @@
 				DEVELOPMENT_TEAM = QM2R683QZ8;
 				INFOPLIST_FILE = SMAChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.example..SMAChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.example.SMAChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -369,7 +434,7 @@
 				DEVELOPMENT_TEAM = QM2R683QZ8;
 				INFOPLIST_FILE = SMAChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.example..SMAChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.example.SMAChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,6 +468,28 @@
 			};
 			name = Release;
 		};
+		BAE8C70D1F383C2E002CC5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QM2R683QZ8;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAE8C70E1F383C2E002CC5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QM2R683QZ8;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -432,6 +519,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BAE8C70F1F383C2E002CC5ED /* Build configuration list for PBXNativeTarget "SMANetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE8C70D1F383C2E002CC5ED /* Debug */,
+				BAE8C70E1F383C2E002CC5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
