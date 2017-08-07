@@ -10,6 +10,7 @@
 #import "SMAQuestion.h"
 #import "SMATextQuestion.h"
 #import "SMAImageQuestion.h"
+#import "SMAUser.h"
 
 @implementation SMAQuestion
 
@@ -33,14 +34,21 @@
 	if (self = [super initWithAPIDictionary:dict]) {
 		
 		NSNumber *created = [dict sma_safelyExtract:[NSNumber class] fromKeypath:@"created"];
+		NSDictionary *userDict = [dict sma_safelyExtract:[NSDictionary class] fromKeypath:@"user"];
 		
 		if (created != nil) {
 			NSTimeInterval interval = [created doubleValue];
-			_created = [NSDate dateWithTimeIntervalSinceNow:interval];
+			if (interval < 0) {
+				_created = [NSDate dateWithTimeIntervalSinceNow:interval];
+			}
+		}
+		
+		if (userDict != nil) {
+			_user = [[SMAUser alloc] initWithAPIDictionary:userDict];
 		}
 	}
 	
-	if (self.created != nil) {
+	if (self.created != nil && self.user != nil) {
 		return self;
 	}
 	
