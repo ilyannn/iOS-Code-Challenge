@@ -27,7 +27,7 @@
 	XCTAssertEqualObjects(url, expected, @"The URL should match what is given.");
 }
 
-- (void)testSerializationError {
+- (void)testDeserializationError {
 	
 	SMANetworkRequestResult *results = [self.request processResults:[NSData new] error:nil];
 	
