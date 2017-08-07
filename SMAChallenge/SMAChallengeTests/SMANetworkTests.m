@@ -27,6 +27,16 @@
 	XCTAssertEqualObjects(url, expected, @"The URL should match what is given.");
 }
 
+- (void)testSerializationError {
+	
+	SMANetworkRequestResult *results = [self.request processResults:[NSData new] error:nil];
+	
+	XCTAssertNil(results.result, @"Nothing to deserialize");
+	XCTAssertNotNil(results.error, @"Error should be present");
+	
+	NSLog(@"Bad result should look like this: %@", results);
+}
+
 - (void)testQuestionsParsing {
 	NSURL *testFile = [[NSBundle bundleForClass:[self class]] URLForResource:@"questionsTest" withExtension:@"json"];
 	NSData *data = [NSData dataWithContentsOfURL:testFile];
@@ -38,6 +48,8 @@
 	XCTAssert([[questions lastObject] isKindOfClass:[SMATextQuestion class]]);
 	SMAImageQuestion *imageQuestion = [questions firstObject];
 	XCTAssertEqualObjects(imageQuestion.user.name, @"John", @"The name should be parsed.");
+	
+	NSLog(@"Good result should look like this: %@", results);
 }
 
 - (void)testSyncronousURLRetrieval {

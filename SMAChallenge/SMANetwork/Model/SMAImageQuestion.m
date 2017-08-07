@@ -24,4 +24,10 @@
 	
 	return nil;
 }
+
+- (NSString *)description {
+	NSString *standard = [super description];
+	return [NSString stringWithFormat:@"%@: (%@)", standard, self.imageURL];
+}
+
 @end
