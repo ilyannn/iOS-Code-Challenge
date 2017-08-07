@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <SMANetwork/SMANetwork.h>
+#import <SMANetwork/SMAModel.h>
 
 @interface SMAChallengeTests : XCTestCase
 
@@ -25,16 +25,18 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testUserModel {
+	SMAUser *failure = [[SMAUser alloc] initWithAPIDictionary:@{ }];
+	SMAUser *success = [[SMAUser alloc] initWithAPIDictionary:@{ @"name": @"John", @"country": @"USA" }];
+	XCTAssertNil(failure);
+	XCTAssertNotNil(success);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testQuestionModel {
+	SMAUser *failure = [[SMAUser alloc] initWithAPIDictionary:@{ @"created": @0 }];
+	SMAUser *success = [[SMAUser alloc] initWithAPIDictionary:@{ @"created": @(-449280), /* number of seconds passed since created */ @"type": @"IMG", @"data": @{ @"url": @"https://pixabay.com/xxxx" }, @"user" : @{ @"name": @"John", @"country": @"USA" } }];
+	XCTAssertNil(failure);
+	XCTAssertNotNil(success);
 }
 
 @end

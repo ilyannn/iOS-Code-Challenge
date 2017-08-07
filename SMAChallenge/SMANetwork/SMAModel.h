@@ -9,5 +9,9 @@
 #ifndef SMAModel_h
 #define SMAModel_h
 
+#import <SMANetwork/SMAObject.h>
+#import <SMANetwork/SMAUser.h>
+#import <SMANetwork/SMAQuestion.h>
+#import <SMANetwork/SMATextQuestion.h>
 
 #endif /* SMAModel_h */
