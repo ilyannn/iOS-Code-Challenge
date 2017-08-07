@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA7EA0F71F3886BD00FC440C /* SMANiceDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7EA0F61F3886BD00FC440C /* SMANiceDateFormatter.m */; };
+		BA7EA0F91F38896F00FC440C /* SMANiceDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7EA0F81F38896F00FC440C /* SMANiceDateTests.m */; };
 		BAC09E061F386E440019BED3 /* SMANetworkRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC09E051F386E440019BED3 /* SMANetworkRequestResult.m */; };
 		BAC09E071F386ED60019BED3 /* SMANetworkRequestResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAC09E041F386E440019BED3 /* SMANetworkRequestResult.h */; };
 		BAC09E0B1F386F890019BED3 /* NSArray+SMAFlatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC09E0A1F386F890019BED3 /* NSArray+SMAFlatMap.m */; };
@@ -83,6 +85,9 @@
 
 /* Begin PBXFileReference section */
 		BA7EA0F11F38823C00FC440C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BA7EA0F51F3886BD00FC440C /* SMANiceDateFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMANiceDateFormatter.h; sourceTree = "<group>"; };
+		BA7EA0F61F3886BD00FC440C /* SMANiceDateFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMANiceDateFormatter.m; sourceTree = "<group>"; };
+		BA7EA0F81F38896F00FC440C /* SMANiceDateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMANiceDateTests.m; sourceTree = "<group>"; };
 		BAC09E041F386E440019BED3 /* SMANetworkRequestResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMANetworkRequestResult.h; sourceTree = "<group>"; };
 		BAC09E051F386E440019BED3 /* SMANetworkRequestResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMANetworkRequestResult.m; sourceTree = "<group>"; };
 		BAC09E091F386F890019BED3 /* NSArray+SMAFlatMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SMAFlatMap.h"; sourceTree = "<group>"; };
@@ -152,6 +157,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA7EA0F21F38862500FC440C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA7EA0F51F3886BD00FC440C /* SMANiceDateFormatter.h */,
+				BA7EA0F61F3886BD00FC440C /* SMANiceDateFormatter.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA7EA0F31F38864100FC440C /* Other Required */ = {
+			isa = PBXGroup;
+			children = (
+				BAE8C6DF1F383A69002CC5ED /* AppDelegate.h */,
+				BAE8C6E01F383A69002CC5ED /* AppDelegate.m */,
+				BAE8C6EA1F383A69002CC5ED /* LaunchScreen.storyboard */,
+				BAE8C6ED1F383A69002CC5ED /* Info.plist */,
+				BAE8C6EE1F383A69002CC5ED /* main.m */,
+			);
+			path = "Other Required";
+			sourceTree = "<group>";
+		};
+		BA7EA0F41F38865200FC440C /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				BAE8C6E21F383A69002CC5ED /* ViewController.h */,
+				BAE8C6E31F383A69002CC5ED /* ViewController.m */,
+				BAE8C6E51F383A69002CC5ED /* Main.storyboard */,
+				BAE8C6E81F383A69002CC5ED /* Assets.xcassets */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
 		BAC09E081F386F570019BED3 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,15 +223,9 @@
 		BAE8C6DE1F383A69002CC5ED /* SMAChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				BAE8C6DF1F383A69002CC5ED /* AppDelegate.h */,
-				BAE8C6E01F383A69002CC5ED /* AppDelegate.m */,
-				BAE8C6E21F383A69002CC5ED /* ViewController.h */,
-				BAE8C6E31F383A69002CC5ED /* ViewController.m */,
-				BAE8C6E51F383A69002CC5ED /* Main.storyboard */,
-				BAE8C6E81F383A69002CC5ED /* Assets.xcassets */,
-				BAE8C6EA1F383A69002CC5ED /* LaunchScreen.storyboard */,
-				BAE8C6ED1F383A69002CC5ED /* Info.plist */,
-				BAE8C6EE1F383A69002CC5ED /* main.m */,
+				BA7EA0F21F38862500FC440C /* Model */,
+				BA7EA0F41F38865200FC440C /* User Interface */,
+				BA7EA0F31F38864100FC440C /* Other Required */,
 			);
 			path = SMAChallenge;
 			sourceTree = "<group>";
@@ -204,6 +235,7 @@
 			children = (
 				BAE8C6F81F383A6A002CC5ED /* SMAModelTests.m */,
 				BAE8C7431F3854FE002CC5ED /* SMANetworkTests.m */,
+				BA7EA0F81F38896F00FC440C /* SMANiceDateTests.m */,
 				BAC09E0C1F3870DB0019BED3 /* questionsTest.json */,
 				BAE8C6FA1F383A6A002CC5ED /* Info.plist */,
 			);
@@ -382,6 +414,7 @@
 				BAE8C6E41F383A69002CC5ED /* ViewController.m in Sources */,
 				BAE8C6EF1F383A69002CC5ED /* main.m in Sources */,
 				BAE8C6E11F383A69002CC5ED /* AppDelegate.m in Sources */,
+				BA7EA0F71F3886BD00FC440C /* SMANiceDateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7EA0F91F38896F00FC440C /* SMANiceDateTests.m in Sources */,
 				BAE8C7441F3854FE002CC5ED /* SMANetworkTests.m in Sources */,
 				BAE8C6F91F383A6A002CC5ED /* SMAModelTests.m in Sources */,
 			);
@@ -434,6 +468,7 @@
 				BAE8C6E61F383A69002CC5ED /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BAE8C6EA1F383A69002CC5ED /* LaunchScreen.storyboard */ = {
@@ -442,6 +477,7 @@
 				BAE8C6EB1F383A69002CC5ED /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -556,7 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QM2R683QZ8;
-				INFOPLIST_FILE = SMAChallenge/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SMAChallenge/Other Required/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.example.SMAChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -569,7 +605,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QM2R683QZ8;
-				INFOPLIST_FILE = SMAChallenge/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SMAChallenge/Other Required/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.example.SMAChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
