@@ -16,6 +16,11 @@
 		BAE8C6F91F383A6A002CC5ED /* SMAChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C6F81F383A6A002CC5ED /* SMAChallengeTests.m */; };
 		BAE8C70B1F383C2E002CC5ED /* SMANetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C70A1F383C2E002CC5ED /* SMANetwork.m */; };
 		BAE8C70C1F383C2E002CC5ED /* SMANetwork.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE8C7091F383C2E002CC5ED /* SMANetwork.h */; };
+		BAE8C7131F383C90002CC5ED /* SMAObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C7121F383C90002CC5ED /* SMAObject.m */; };
+		BAE8C7161F383CA2002CC5ED /* SMAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C7151F383CA2002CC5ED /* SMAUser.m */; };
+		BAE8C71C1F383CF1002CC5ED /* SMAQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C71B1F383CF1002CC5ED /* SMAQuestion.m */; };
+		BAE8C71F1F383D01002CC5ED /* SMATextQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C71E1F383D01002CC5ED /* SMATextQuestion.m */; };
+		BAE8C7221F383D0C002CC5ED /* SMAImageQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE8C7211F383D0C002CC5ED /* SMAImageQuestion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +30,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = BAE8C6DB1F383A69002CC5ED;
 			remoteInfo = SMAChallenge;
+		};
+		BAE8C7251F384057002CC5ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAE8C6D41F383A69002CC5ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAE8C7061F383C2D002CC5ED;
+			remoteInfo = SMANetwork;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,6 +70,16 @@
 		BAE8C7071F383C2D002CC5ED /* libSMANetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMANetwork.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE8C7091F383C2E002CC5ED /* SMANetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMANetwork.h; sourceTree = "<group>"; };
 		BAE8C70A1F383C2E002CC5ED /* SMANetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMANetwork.m; sourceTree = "<group>"; };
+		BAE8C7111F383C90002CC5ED /* SMAObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAObject.h; sourceTree = "<group>"; };
+		BAE8C7121F383C90002CC5ED /* SMAObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAObject.m; sourceTree = "<group>"; };
+		BAE8C7141F383CA2002CC5ED /* SMAUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAUser.h; sourceTree = "<group>"; };
+		BAE8C7151F383CA2002CC5ED /* SMAUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAUser.m; sourceTree = "<group>"; };
+		BAE8C71A1F383CF1002CC5ED /* SMAQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAQuestion.h; sourceTree = "<group>"; };
+		BAE8C71B1F383CF1002CC5ED /* SMAQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAQuestion.m; sourceTree = "<group>"; };
+		BAE8C71D1F383D01002CC5ED /* SMATextQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMATextQuestion.h; sourceTree = "<group>"; };
+		BAE8C71E1F383D01002CC5ED /* SMATextQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMATextQuestion.m; sourceTree = "<group>"; };
+		BAE8C7201F383D0C002CC5ED /* SMAImageQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAImageQuestion.h; sourceTree = "<group>"; };
+		BAE8C7211F383D0C002CC5ED /* SMAImageQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAImageQuestion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +155,28 @@
 		BAE8C7081F383C2E002CC5ED /* SMANetwork */ = {
 			isa = PBXGroup;
 			children = (
+				BAE8C7101F383C5B002CC5ED /* Model */,
 				BAE8C7091F383C2E002CC5ED /* SMANetwork.h */,
 				BAE8C70A1F383C2E002CC5ED /* SMANetwork.m */,
 			);
 			path = SMANetwork;
+			sourceTree = "<group>";
+		};
+		BAE8C7101F383C5B002CC5ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAE8C7111F383C90002CC5ED /* SMAObject.h */,
+				BAE8C7121F383C90002CC5ED /* SMAObject.m */,
+				BAE8C7141F383CA2002CC5ED /* SMAUser.h */,
+				BAE8C7151F383CA2002CC5ED /* SMAUser.m */,
+				BAE8C71A1F383CF1002CC5ED /* SMAQuestion.h */,
+				BAE8C71B1F383CF1002CC5ED /* SMAQuestion.m */,
+				BAE8C71D1F383D01002CC5ED /* SMATextQuestion.h */,
+				BAE8C71E1F383D01002CC5ED /* SMATextQuestion.m */,
+				BAE8C7201F383D0C002CC5ED /* SMAImageQuestion.h */,
+				BAE8C7211F383D0C002CC5ED /* SMAImageQuestion.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +193,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BAE8C7261F384057002CC5ED /* PBXTargetDependency */,
 			);
 			name = SMAChallenge;
 			productName = SMAChallenge;
@@ -278,6 +319,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE8C71F1F383D01002CC5ED /* SMATextQuestion.m in Sources */,
+				BAE8C7161F383CA2002CC5ED /* SMAUser.m in Sources */,
+				BAE8C71C1F383CF1002CC5ED /* SMAQuestion.m in Sources */,
+				BAE8C7221F383D0C002CC5ED /* SMAImageQuestion.m in Sources */,
+				BAE8C7131F383C90002CC5ED /* SMAObject.m in Sources */,
 				BAE8C70B1F383C2E002CC5ED /* SMANetwork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +335,11 @@
 			isa = PBXTargetDependency;
 			target = BAE8C6DB1F383A69002CC5ED /* SMAChallenge */;
 			targetProxy = BAE8C6F51F383A6A002CC5ED /* PBXContainerItemProxy */;
+		};
+		BAE8C7261F384057002CC5ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAE8C7061F383C2D002CC5ED /* SMANetwork */;
+			targetProxy = BAE8C7251F384057002CC5ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
